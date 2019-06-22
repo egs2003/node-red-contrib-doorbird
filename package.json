@@ -20,5 +20,9 @@
   "dependencies": {
     "argon2": "^0.24.0",
     "chacha-js": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egs2003/node-red-contrib-doorbird.git"
   }
 }
