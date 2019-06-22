@@ -9,7 +9,7 @@
     "doorbird",
     "doorbell"
   ],
-  "license": "CC-BY-4.0",
+  "license": "MIT",
   "name": "node-red-contrib-doorbird",
   "node-red": {
     "nodes": {
