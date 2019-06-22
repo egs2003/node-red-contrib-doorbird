@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    RED.nodes.registerType('doorbird',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+		credentials: {
+			username: {type:"text", required:true},
+			password: {type:"password", required:true}
+		},        
+        inputs:1,
+        outputs:1,
+        icon: "feed.png",
+        label: function() {
+            return this.name || "DoorBird";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="doorbird">
+	<div class="form-row">
+		<label for="node-input-username"><i class="icon-tag"></i> Username</label>
+		<input type="text" id="node-input-username" placeholder="Benutzername">
+	</div>
+	<div class="form-row">
+		<label for="node-input-password"><i class="icon-tag"></i> Password</label>
+		<input type="password" id="node-input-password" placeholder="Passwort">
+	</div>
+	
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="doorbird">
+	<p>Raise output if doorbird-broadcast is evaluated as ringing</p>
+
+	<h3>Inputs</h3>
+		<dl class="message-properties">
+			<dt>payload<span class="property-type">buffer</span></dt>
+			<dd>the doorbird-broadcast.</dd>
+		</dl>
+
+	 <h3>Outputs</h3>
+		 <dl class="message-properties">
+			 <dt>payload<span class="property-type">boolean</span></dt>
+			 <dd><code>true</code> - if ringing.</dd>
+			 <dd><code>false</code> - if movement.</dd>
+		 </dl>
+
+	<h3>Details</h3>
+		<p><code>msg.payload</code> contains the payload of the doorbird-broadcast.
+			If broadcast is evaluated as ringing, msg.payload of output will send out as true.</p>
+
+</script>

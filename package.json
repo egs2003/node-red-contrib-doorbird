@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "MG",
+    "email": "MaGu180818@gmail.com"
+  },
+  "description": "DoorBird - let's detect doorbell",
+  "keywords": [
+    "node-red",
+    "doorbird",
+    "doorbell"
+  ],
+  "license": "CC-BY-4.0",
+  "name": "node-red-contrib-doorbird",
+  "node-red": {
+    "nodes": {
+      "doorbird": "doorbird.js"
+    }
+  },
+  "version": "0.2.4",
+  "dependencies": {
+    "argon2": "^0.24.0",
+    "chacha-js": "^2.1.1"
+  }
+}
