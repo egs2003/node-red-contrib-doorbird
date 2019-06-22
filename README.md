@@ -1,6 +1,6 @@
 Am Eingang des Moduls wird der UDP-Broadcast der Doorbird erwartet. Der Broadcast erfolgt auf den UDP-Ports 6524 und 35344. Das UDP-Modul muss seine Daten als Buffer weitergeben.
 
-![udp](https://www.dropbox.com/s/likb1tqsvs89kad/udp.jpg?dl=1)
+![udp](udp.jpg)
 
 Ab Seite 27 ist der Ablauf beschrieben, wie ein UDP-Broadcast-Paket verarbeitet werden muss.  
 [Referenzdokument Doorbird API](https://www.doorbird.com/downloads/api_lan.pdf)
