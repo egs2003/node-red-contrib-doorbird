@@ -16,7 +16,7 @@
       "doorbird": "doorbird.js"
     }
   },
-  "version": "0.2.4",
+  "version": "0.2.5",
   "dependencies": {
     "argon2": "^0.24.0",
     "chacha-js": "^2.1.1"
